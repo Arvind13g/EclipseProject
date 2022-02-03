@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Utility {
 	
+	// Global to Local
 	public static void saveScreenshot (WebDriver driver , int testID ) throws IOException
 	{
 		File scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
