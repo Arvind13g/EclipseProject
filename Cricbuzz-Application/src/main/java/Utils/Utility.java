@@ -12,14 +12,5 @@ import org.openqa.selenium.WebDriver;
 
 public class Utility {
 	
-	public static void saveScreenshot (WebDriver driver , int testID ) throws IOException
-	{
-		File scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest= new File("F:\\Arvind ST\\TestID " +timestamp()+".jpg");
-		FileUtils.copyFile(scr, dest) ;
-	}
-
-	private static String timestamp() {
-		return new SimpleDateFormat("yyyy-MM-dd HH.mm.ss").format(new Date());
-	}
+	
 }
